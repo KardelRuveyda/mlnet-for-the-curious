@@ -1,0 +1,187 @@
+﻿<!-- Eğitim Butonu -->
+<form id="trainForm" asp-action="TrainModel" method="post">
+    <button type="submit" class="btn btn-primary btn-block mb-4" onclick="showLoader('train')">Eğit</button>
+    <div id="trainLoader" class="text-center" style="display: none;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</form>
+
+<hr class="my-4">
+
+<!-- Eğitim Sonuçları -->
+<div>
+    @if (ViewBag.TrainResult != null)
+    {
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-primary">Eğitim Sonuçları</h4>
+                    <table class="table table-bordered">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th scope="col">Ölçüm</th>
+                                <th scope="col">Değer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Accuracy</td>
+                                <td>@ViewBag.Accuracy</td>
+                            </tr>
+                            <tr>
+                                <td>AUC</td>
+                                <td>@ViewBag.Auc</td>
+                            </tr>
+                            <tr>
+                                <td>F1 Score</td>
+                                <td>@ViewBag.F1Score</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    }
+</div>
+
+
+<hr class="my-4">
+
+<script>
+    function evaluateWithOpenAI() {
+
+        $('#evaluateButton').prop('disabled', true); // Butonu devre dışı bırak
+        $('#evaluateLoader').show(); // Loader'ı görünür yap
+
+        // Define JavaScript variables to hold ViewBag values
+        var accuracy = @((ViewBag.Accuracy != null ? Convert.ToDouble(ViewBag.Accuracy) : 0).ToString().Replace(",", "."));
+        var auc = @((ViewBag.Auc != null ? Convert.ToDouble(ViewBag.Auc) : 0).ToString().Replace(",", "."));
+        var f1Score = @((ViewBag.F1Score != null ? Convert.ToDouble(ViewBag.F1Score) : 0).ToString().Replace(",", "."));
+
+
+
+        // Değerlendirme metnini oluşturalım
+        const prompt = `Aşağıdaki model performans metriklerini değerlendir ve sonucu 3 cümlede açıkla :\n\nDoğruluk (Accuracy): ${accuracy}\nAUC: ${auc}\nF1 Skoru: ${f1Score}\n\nBu metrikler modelin performansı hakkında ne söylüyor? Lütfen detaylı bir analiz yap.`;
+
+        var data = {
+            prompt: prompt
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/Home/SendChatGpt",
+            data: data,
+            success: function(response) {
+                $('#evaluationResult').text(response);
+                // Yanıt başarılı bir şekilde alındı, burada işlemler yapabilirsiniz
+                // Başarılı veya hata durumunda loader'ı gizle
+                $('#evaluateButton').prop('disabled', false); // Butonu etkinleştir
+                $('#evaluateLoader').hide(); // Loader'ı gizle
+                console.log(response);
+            },
+            error: function(xhr, status, error) {
+                // Hata durumunda burada işlemler yapabilirsiniz
+                console.error(xhr.responseText);
+                // Başarılı veya hata durumunda loader'ı gizle
+                $('#evaluateButton').prop('disabled', false); // Butonu etkinleştir
+                $('#evaluateLoader').hide(); // Loader'ı gizle
+            }
+        });
+    }
+</script>
+
+<!-- Chat GPT Değerlendirsin Alanı -->
+<div class="mt-3">
+        <h4>GPT Sonuçları Değerlendirsin</h4>
+
+    <button type="button" onclick="evaluateWithOpenAI()" class="btn btn-primary" id="evaluateButton">Değerlendir.</button>
+    <div id="evaluateLoader" class="spinner-border text-primary" role="status" style="display: none;"></div>
+</div>
+
+<div id="evaluationResult"></div>
+
+
+
+<hr class="my-4">
+
+<!-- Duygu Analizi Test Alanı -->
+<div>
+    <h4>Duygu Analizi Testi</h4>
+    <form id="predictionForm">
+        <div class="form-group">
+            <label for="reviewContent">İnceleme Girin:</label>
+            <input type="text" class="form-control" id="reviewContent" name="reviewContent">
+        </div>
+
+        <button type="button" onclick="predictSentiment()" class="btn btn-primary">Duygu Analizini Tahmin Et</button>
+        <div id="predictionLoader" class="text-center" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </form>
+    <div id="predictionResult"></div>
+</div>
+
+<script>
+      
+    function showLoader(type) {
+        if (type === 'train') {
+            $('#trainLoader').show();
+        } else if (type === 'predict') {
+            $('#predictionLoader').show();
+        }
+    }
+
+    function hideLoader(type) {
+        if (type === 'train') {
+            $('#trainLoader').hide();
+        } else if (type === 'predict') {
+            $('#predictionLoader').hide();
+        }
+    }
+
+    function predictSentiment() {
+        var reviewContent = document.getElementById("reviewContent").value;
+
+        if (!reviewContent) {
+            // reviewContent boş veya null ise
+            alert('Lütfen cümle giriniz.');
+            return; // Fonksiyondan çık
+        }
+
+        $.ajax({
+            url: '/Home/PredictSentiment',
+            type: 'POST',
+            data: { reviewContent: reviewContent },
+            beforeSend: function() {
+                showLoader('predict');
+            },
+            success: function (result) {
+                // Tahmin sonucunu işle
+                var prediction = result.prediction;
+                var probability = result.probability;
+
+                // Tahmin durumuna göre emoji ikonlarını belirle
+                var icon = prediction ? '😊' : '😞';
+
+                // Sonucu tablo ve ikonlarla göster
+                var resultHtml = '<h4 class="mt-4">Duygu Analizi Sonucu</h4>';
+                resultHtml += '<table class="table table-striped">';
+                resultHtml += '<thead><tr><th scope="col">Cümle</th><th scope="col">Tahmin</th><th scope="col">Olasılık</th></tr></thead>';
+                resultHtml += '<tbody>';
+                resultHtml += '<tr>';
+                resultHtml += '<td>' + reviewContent + '</td>';
+                resultHtml += '<td>' + icon + (prediction ? ' (Pozitif)' : ' (Negatif)') + '</td>';
+                resultHtml += '<td>' + probability + '</td>';
+                resultHtml += '</tr>';
+                resultHtml += '</tbody></table>';
+
+                $('#predictionResult').html(resultHtml);
+            },
+            complete: function() {
+                hideLoader('predict');
+            }
+        });
+    }
+</script>
