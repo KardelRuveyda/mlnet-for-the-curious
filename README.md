@@ -1,39 +1,42 @@
-![image](https://github.com/KardelRuveyda/mlnet-for-the-curious/assets/33912144/88e332d5-6117-42c4-bcdd-cea90e76288a)
-
 # mlnet-for-the-curious
 
-Explore ML.NET with projects for Model Builder Sentiment Analysis, API Sentiment Analysis, and API House Price Prediction. Perfect for beginners and enthusiasts!
+Model Builder Duygu Analizi, API Duygu Analizi ve API Ev Fiyatı Tahmini projeleriyle ML.NET'i keşfedin. Yeni başlayanlar ve meraklılar için mükemmel!
 
-## Projects
+## Projeler
 
-### 1. Model Builder Sentiment Analysis
-Learn how to create a sentiment analysis model using the ML.NET Model Builder. This project walks you through the steps to build, train, and evaluate a sentiment analysis model.
+### 1. Model Builder Duygu Analizi
+ML.NET Model Builder kullanarak nasıl duygu analizi modeli oluşturulacağını öğrenin. Bu proje, bir duygu analizi modelini oluşturma, eğitme ve değerlendirme adımlarını anlatır.
 
-### 2. API Sentiment Analysis
-Implement a sentiment analysis model as an API. This project provides a complete example of how to build and deploy a sentiment analysis API using ML.NET.
+### 2. API Duygu Analizi
 
-### 3. API House Price Prediction
-Create and deploy an API that predicts house prices based on various features. This project demonstrates real estate price prediction using ML.NET.
+![image](https://github.com/KardelRuveyda/mlnet-for-the-curious/assets/33912144/3595b625-73f1-4727-aca3-e676558a000e)
 
-## Getting Started
+Bir duygu analizi modelini API olarak uygulayın. Bu proje, ML.NET kullanarak bir duygu analizi API'si oluşturmanın ve dağıtmanın tam bir örneğini sağlar.
 
-### Prerequisites
+![image](https://github.com/KardelRuveyda/mlnet-for-the-curious/assets/33912144/88e332d5-6117-42c4-bcdd-cea90e76288a)
+
+### 3. API Ev Fiyatı Tahmini
+Çeşitli özelliklere dayalı olarak ev fiyatlarını tahmin eden bir API oluşturun ve dağıtın. Bu proje, ML.NET kullanarak emlak fiyat tahminini gösterir.
+
+## Başlarken
+
+### Gereksinimler
 - .NET SDK
 - ML.NET
-- Any code editor (Visual Studio, VS Code, etc.)
+- Herhangi bir kod editörü (Visual Studio, VS Code, vb.)
 
-### Installation
-1. Clone the repository:
+### Kurulum
+1. Depoyu klonlayın:
    \`\`\`bash
    git clone https://github.com/yourusername/mlnet-for-the-curious.git
    \`\`\`
-2. Navigate to the project directory and open it in your preferred code editor.
+2. Proje dizinine gidin ve tercih ettiğiniz kod editöründe açın.
 
-### Running the Projects
-Follow the instructions in each project folder to build, train, and run the models and APIs.
+### Projeleri Çalıştırma
+Modelleri ve API'leri oluşturmak, eğitmek ve çalıştırmak için her proje klasöründeki talimatları izleyin.
 
-## Contributing
-Contributions are welcome! Feel free to open issues or submit pull requests.
+## Katkıda Bulunma
+Katkılar memnuniyetle karşılanır! Sorunları açmaktan veya pull request göndermekten çekinmeyin.
 
-## License
-This project is licensed under the MIT License.
+## Lisans
+Bu proje MIT Lisansı altında lisanslanmıştır.
