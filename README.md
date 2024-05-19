@@ -11,7 +11,8 @@ ML.NET Model Builder kullanarak nasıl duygu analizi modeli oluşturulacağını
 
 ### 2. API Duygu Analizi
 
-![image](https://github.com/KardelRuveyda/mlnet-for-the-curious/assets/33912144/3595b625-73f1-4727-aca3-e676558a000e)
+![image](https://github.com/KardelRuveyda/mlnet-for-the-curious/assets/33912144/ff170327-2311-4fd1-9411-45509e8fb8f8)
+
 
 Bir duygu analizi modelini API olarak uygulayın. Bu proje, ML.NET kullanarak bir duygu analizi API'si oluşturmanın ve dağıtmanın tam bir örneğini sağlar.
 
