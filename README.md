@@ -7,6 +7,8 @@ Model Builder Duygu Analizi, API Duygu Analizi ve API Ev Fiyatı Tahmini projele
 ### 1. Model Builder Duygu Analizi
 ML.NET Model Builder kullanarak nasıl duygu analizi modeli oluşturulacağını öğrenin. Bu proje, bir duygu analizi modelini oluşturma, eğitme ve değerlendirme adımlarını anlatır.
 
+![image](https://github.com/KardelRuveyda/mlnet-for-the-curious/assets/33912144/39527ae7-08ee-4286-a5d9-7ec91918210b)
+
 ### 2. API Duygu Analizi
 
 ![image](https://github.com/KardelRuveyda/mlnet-for-the-curious/assets/33912144/3595b625-73f1-4727-aca3-e676558a000e)
@@ -17,6 +19,8 @@ Bir duygu analizi modelini API olarak uygulayın. Bu proje, ML.NET kullanarak bi
 
 ### 3. API Ev Fiyatı Tahmini
 Çeşitli özelliklere dayalı olarak ev fiyatlarını tahmin eden bir API oluşturun ve dağıtın. Bu proje, ML.NET kullanarak emlak fiyat tahminini gösterir.
+
+![image](https://github.com/KardelRuveyda/mlnet-for-the-curious/assets/33912144/ee2f00d1-c1aa-4226-a2a6-0f882eaff7de)
 
 ## Başlarken
 
