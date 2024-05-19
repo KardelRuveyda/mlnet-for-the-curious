@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1885CBE2-70AC-4FDA-A5AB-426031DAC3B1}|MLSentimentAnalysis\\MLSentimentAnalysis.csproj|c:\\users\\ruveyda.cetin\\desktop\\dotnetconference\\dotnetconf\\mlsentimentanalysis\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1885CBE2-70AC-4FDA-A5AB-426031DAC3B1}|MLSentimentAnalysis\\MLSentimentAnalysis.csproj|solutionrelative:mlsentimentanalysis\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CEA5AE0-5196-4337-8D1F-8EC9702DD406}|MLNetSentimentConsole\\MLNetSentimentConsole.csproj|c:\\users\\ruveyda.cetin\\desktop\\dotnetconference\\dotnetconf\\mlnetsentimentconsole\\mlsentimentanalysis.mbconfig||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}",
+      "RelativeMoniker": "D:0:0:{6CEA5AE0-5196-4337-8D1F-8EC9702DD406}|MLNetSentimentConsole\\MLNetSentimentConsole.csproj|solutionrelative:mlnetsentimentconsole\\mlsentimentanalysis.mbconfig||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1885CBE2-70AC-4FDA-A5AB-426031DAC3B1}|MLSentimentAnalysis\\MLSentimentAnalysis.csproj|c:\\users\\ruveyda.cetin\\desktop\\dotnetconference\\dotnetconf\\mlsentimentanalysis\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Chat.cs",
-              "DocumentMoniker": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\MLSentimentAnalysis\\Models\\Chat.cs",
-              "RelativeDocumentMoniker": "MLSentimentAnalysis\\Models\\Chat.cs",
-              "ToolTip": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\MLSentimentAnalysis\\Models\\Chat.cs",
-              "RelativeToolTip": "MLSentimentAnalysis\\Models\\Chat.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T11:37:43.516Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:6:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
@@ -71,15 +58,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\MLSentimentAnalysis\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MLSentimentAnalysis\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\MLSentimentAnalysis\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MLSentimentAnalysis\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAA8wIgAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T23:04:29.343Z",
+              "DocumentIndex": 0,
+              "Title": "MLSentimentAnalysis.mbconfig",
+              "DocumentMoniker": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\MLNetSentimentConsole\\MLSentimentAnalysis.mbconfig",
+              "RelativeDocumentMoniker": "MLNetSentimentConsole\\MLSentimentAnalysis.mbconfig",
+              "ToolTip": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\MLNetSentimentConsole\\MLSentimentAnalysis.mbconfig",
+              "RelativeToolTip": "MLNetSentimentConsole\\MLSentimentAnalysis.mbconfig",
+              "Icon": "7f5c38b0-f0bc-4551-a9a8-b4f467cc4670.000012|",
+              "WhenOpened": "2024-05-19T12:33:14.653Z",
               "EditorCaption": ""
             },
             {
@@ -90,9 +76,23 @@
               "RelativeDocumentMoniker": "MLSentimentAnalysis\\Views\\Home\\TrainModelView.cshtml",
               "ToolTip": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\MLSentimentAnalysis\\Views\\Home\\TrainModelView.cshtml",
               "RelativeToolTip": "MLSentimentAnalysis\\Views\\Home\\TrainModelView.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAMwD8AAABmAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAGUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-18T22:43:53.502Z"
+              "WhenOpened": "2024-05-19T12:25:00.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\MLSentimentAnalysis\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MLSentimentAnalysis\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ruveyda.cetin\\Desktop\\DotnetConference\\DotnetConf\\MLSentimentAnalysis\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MLSentimentAnalysis\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAQwHkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T12:24:52.216Z",
+              "EditorCaption": ""
             }
           ]
         }

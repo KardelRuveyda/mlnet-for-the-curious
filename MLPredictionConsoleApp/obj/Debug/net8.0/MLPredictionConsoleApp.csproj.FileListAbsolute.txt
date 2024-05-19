@@ -34,3 +34,4 @@ C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLPredictionConsoleAp
 C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLPredictionConsoleApp\obj\Debug\net8.0\MLPredictionConsoleApp.pdb
 C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLPredictionConsoleApp\obj\Debug\net8.0\MLPredictionConsoleApp.genruntimeconfig.cache
 C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLPredictionConsoleApp\obj\Debug\net8.0\ref\MLPredictionConsoleApp.dll
+C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLPredictionConsoleApp\obj\Debug\net8.0\MLPredictionConsoleApp.sourcelink.json
