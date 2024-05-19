@@ -1,3 +1,4 @@
+![image](https://github.com/KardelRuveyda/mlnet-for-the-curious/assets/33912144/88e332d5-6117-42c4-bcdd-cea90e76288a)
 
 # mlnet-for-the-curious
 
