@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MLSentimentAnalysis")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c918c211dfbe812511e97628ff3077cba432c499")]
 [assembly: System.Reflection.AssemblyProductAttribute("MLSentimentAnalysis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MLSentimentAnalysis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

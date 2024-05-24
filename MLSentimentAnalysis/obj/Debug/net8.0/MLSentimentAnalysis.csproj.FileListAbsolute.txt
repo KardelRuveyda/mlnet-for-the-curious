@@ -52,3 +52,4 @@ C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLSentimentAnalysis\o
 C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLSentimentAnalysis\obj\Debug\net8.0\MLSentim.D21249BC.Up2Date
 C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLSentimentAnalysis\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLSentimentAnalysis\bin\Debug\net8.0\OpenAI_API.dll
+C:\Users\ruveyda.cetin\Desktop\DotnetConference\DotnetConf\MLSentimentAnalysis\obj\Debug\net8.0\MLSentimentAnalysis.sourcelink.json
